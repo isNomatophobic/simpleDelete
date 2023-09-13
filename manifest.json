@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Delete",
+  "author": "Kristian Petrov",
+  "description": "Delete anything from a page within a button click!",
+  "version": "1.0",
+  "action": {
+    "default_title": "Delete Element"
+  },
+  "content_scripts": [],
+  "web_accessible_resources": [],
+
+  "permissions": ["activeTab", "tabs"]
+}
