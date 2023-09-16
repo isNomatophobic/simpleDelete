@@ -1,7 +1,8 @@
 let activeDelete = false;
 
 chrome.action.onClicked.addListener((tab) => {
-  console.log(tab);
-  console.log(activeDelete);
-  activeDelete != activeDelete;
+  chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    files: ["scripts/delete.js"],
+  });
 });
