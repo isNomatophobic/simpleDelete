@@ -8,7 +8,9 @@
     "default_title": "Delete Element"
   },
   "content_scripts": [],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
   "web_accessible_resources": [],
-
-  "permissions": ["activeTab", "tabs"]
+  "permissions": ["activeTab", "scripting"]
 }
