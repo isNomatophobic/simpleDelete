@@ -6,6 +6,7 @@ const activeDelete = {
 };
 chrome.action.onClicked.addListener((tab) => {
   chrome.scripting.executeScript({
+    args: [activeDelete],
     target: { tabId: tab.id },
     files: ["scripts/delete.js"],
   });

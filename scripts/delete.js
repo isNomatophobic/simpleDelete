@@ -1,5 +1,4 @@
-(function () {
+(function (args) {
   if (activeDelete == null) return;
-  console.log(activeDelete);
   activeDelete != activeDelete;
 })();
